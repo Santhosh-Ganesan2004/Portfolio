@@ -1,7 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tanstack-start-app",
+  "name": "santhosh",
+  // Replace with your Cloudflare account ID before publishing
+  "account_id": "aee641a196547b2a195dcf681d2b8ce1",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "src/server.ts",
+  "main": "src/server.ts"
 }

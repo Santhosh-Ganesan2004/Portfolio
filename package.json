@@ -9,6 +9,7 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "deploy:cloudflare": "npm run build && wrangler deploy dist/server/server.js --assets dist/client",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
