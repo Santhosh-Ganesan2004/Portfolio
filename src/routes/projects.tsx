@@ -81,34 +81,50 @@ function ProjectsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: i * 0.04 }}
             >
-              <Link
-                to="/projects/$slug"
-                params={{ slug: p.slug }}
-                className="group block glass-card p-6 h-full hover:border-primary/40 hover:-translate-y-0.5 transition-all"
-              >
+              <div className="group glass-card p-6 h-full hover:border-primary/40 hover:-translate-y-0.5 transition-all">
                 <div className="flex items-start justify-between mb-4">
                   <span className="font-mono text-[10px] uppercase tracking-wider text-primary-glow">{p.category}</span>
                   <ArrowUpRight className="h-4 w-4 text-muted-foreground group-hover:text-primary-glow transition" />
                 </div>
-                <h3 className="text-xl font-semibold tracking-tight">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.summary}</p>
-                {p.metric && (
-                  <p className="mt-3 font-mono text-xs text-foreground/80">→ {p.metric}</p>
-                )}
-                <div className="mt-4 flex flex-wrap gap-1.5">
-                  {p.stack.map((s) => (
-                    <span key={s} className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-secondary text-muted-foreground">{s}</span>
-                  ))}
-                </div>
-                <div className="mt-5 flex items-center gap-3 text-xs text-muted-foreground">
+                <Link
+                  to="/projects/$slug"
+                  params={{ slug: p.slug }}
+                  className="block"
+                >
+                  <h3 className="text-xl font-semibold tracking-tight">{p.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.summary}</p>
+                  {p.metric && (
+                    <p className="mt-3 font-mono text-xs text-foreground/80">→ {p.metric}</p>
+                  )}
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {p.stack.map((s) => (
+                      <span key={s} className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-secondary text-muted-foreground">{s}</span>
+                    ))}
+                  </div>
+                </Link>
+                <div className="mt-5 flex flex-wrap items-center gap-3 text-xs text-muted-foreground">
                   {p.github && (
-                    <span className="inline-flex items-center gap-1"><Github className="h-3.5 w-3.5" /> Code</span>
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 rounded-md border border-border bg-secondary/40 px-3 py-1.5 text-sm hover:bg-secondary"
+                    >
+                      <Github className="h-3.5 w-3.5" /> Code
+                    </a>
                   )}
                   {p.demo && (
-                    <span className="inline-flex items-center gap-1"><ExternalLink className="h-3.5 w-3.5" /> Demo</span>
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 rounded-md border border-border bg-secondary/40 px-3 py-1.5 text-sm hover:bg-secondary"
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" /> Demo
+                    </a>
                   )}
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -8,7 +8,9 @@ export function PageTransition({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
     >
-      {children}
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+        {children}
+      </div>
     </motion.div>
   );
 }

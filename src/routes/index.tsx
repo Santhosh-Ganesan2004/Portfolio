@@ -23,13 +23,12 @@ const highlights = [
   { icon: Sparkles, title: "AI Systems", desc: "End-to-end intelligent applications with ML pipelines and semantic inference." },
   { icon: Cpu, title: "Edge Computing", desc: "Optimized on-device AI deployment and efficient inference workflows." },
   { icon: Server, title: "Backend Engineering", desc: "Backend-integrated services and APIs for real-time model serving." },
-  { icon: Cloud, title: "Deployment Optimization", desc: "Reliable, scalable deployment workflows for production software." },
 ];
 
 function HomePage() {
   const featured = getAllProjects().slice(0, 3);
   return (
-    <div>
+    <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 grid-bg pointer-events-none" />
@@ -128,7 +127,7 @@ function HomePage() {
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Engineering across the stack</h2>
           </div>
         </div>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {highlights.map((h, i) => (
             <motion.div
               key={h.title}

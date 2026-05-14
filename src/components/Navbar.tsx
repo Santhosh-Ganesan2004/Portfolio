@@ -56,12 +56,6 @@ export function Navbar() {
                   {l.label}
                 </Link>
               ))}
-              <Link
-                to="/contact"
-                className="ml-2 inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 shadow-[0_0_24px_-6px_var(--primary)]"
-              >
-                Hire me
-              </Link>
               <div className="ml-2"><ThemeToggle /></div>
             </nav>
 

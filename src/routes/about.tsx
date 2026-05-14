@@ -116,7 +116,7 @@ function AboutPage() {
                 <p className="font-mono text-xs text-primary-glow">{t.year}</p>
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold">{t.title}</h3>
+                <h3 className="text-2xl font-semibold tracking-tight">{t.title}</h3>
                 <p className="text-sm text-muted-foreground">{t.org}</p>
                 <p className="mt-2 text-sm text-foreground/80 leading-relaxed">{t.desc}</p>
               </div>

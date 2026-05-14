@@ -3,7 +3,7 @@ title: AI-Powered Resume Analysis & Job Recommendation System
 summary: Semantic resume analysis platform for intelligent candidate-role matching and AI-driven job recommendations.
 category: AI Applications • NLP Systems
 stack: [SBERT, NLP, OCR, Streamlit, Python]
-github: https://github.com/Santhosh-Ganesan2004
+github: https://github.com/Santhosh-Ganesan2004/TalentSync
 date: 2025-04-01
 ---
 

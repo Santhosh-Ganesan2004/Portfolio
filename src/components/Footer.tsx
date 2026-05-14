@@ -3,11 +3,9 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export function Footer() {
   return (
     <footer className="border-t border-border/60 mt-24">
-      <div className="w-full px-6 py-10 flex flex-col items-center justify-center gap-4 text-center">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} — Built with intent. Deployed at the edge.
-        </p>
-        <div className="flex items-center gap-3">
+      <div className="w-full px-6 py-6 grid grid-cols-[auto_1fr_auto] items-center gap-4 text-sm text-muted-foreground">
+        <p className="whitespace-nowrap">© {new Date().getFullYear()} — Built with intent. Deployed at the edge.</p>
+        <div className="justify-self-center flex items-center gap-3">
           <a href="https://github.com/Santhosh-Ganesan2004" target="_blank" rel="noreferrer" className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors" aria-label="GitHub">
             <Github className="h-4 w-4" />
           </a>
@@ -18,6 +16,7 @@ export function Footer() {
             <Mail className="h-4 w-4" />
           </a>
         </div>
+        <div />
       </div>
     </footer>
   );

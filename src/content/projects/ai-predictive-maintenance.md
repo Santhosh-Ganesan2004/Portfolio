@@ -3,7 +3,7 @@ title: AI Predictive Maintenance System
 summary: Predictive maintenance platform for industrial systems using anomaly detection and Remaining Useful Life estimation.
 category: Software Systems • AI Applications
 stack: [Python, FastAPI, Streamlit, Machine Learning, Industrial IoT]
-github: https://github.com/Santhosh-Ganesan2004
+github: https://github.com/Santhosh-Ganesan2004/IoT-Predictive-Maintenance
 date: 2025-05-15
 ---
 

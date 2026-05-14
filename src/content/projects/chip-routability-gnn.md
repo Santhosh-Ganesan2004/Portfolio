@@ -3,7 +3,7 @@ title: Predictive Modelling of Chip Routability via Graph Neural Networks
 summary: Graph-based machine learning system for integrated circuit routability prediction and congestion-aware layout analysis.
 category: Research & Intelligent Systems
 stack: [PyTorch Geometric, Graph Neural Networks, Python, NumPy, Matplotlib]
-github: https://github.com/Santhosh-Ganesan2004
+github: https://github.com/Santhosh-Ganesan2004/Chip_Routability_Prediction_Using-GNN
 date: 2025-06-01
 ---
 
